@@ -7,12 +7,13 @@ import Counter from "./pages/Counter";
 import Input from "./pages/Input";
 import Input2 from "./pages/Input2";
 import List from "./pages/List";
+import Review from "./pages/Review";
 
 function App() {
   return (
     <div className="App">
       <nav>
-        <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/counter">Counter</Link> | <Link to="/input">Input</Link> | <Link to="/input2">Input2</Link> | <Link to="/List">List</Link>
+        <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/counter">Counter</Link> | <Link to="/input">Input</Link> | <Link to="/input2">Input2</Link> | <Link to="/List">List</Link> | <Link to="/Review">Review</Link>
       </nav>
       {/* 전환 되는 것을 정의 하는 것 */}
       <Routes>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/input" element = {<Input />} />
         <Route path="/input2" element = {<Input2 />} />
         <Route path="/List" element = {<List />} />
+        <Route path="/Review" element = {<Review />} />
       </Routes>
     </div>
     // jsx 문법 html 태그 쓰는 것과 완전히 동일하지 않음
